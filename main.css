@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;;
+    box-sizing: border-box;
+    color: white;
+
+}
+@keyframes fade-in{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+body{
+    background-image: url(./images/image\ 1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    opacity: 0;
+    animation: fade-in 2s 0s 1 forwards;
+}
+h2{
+    padding: 10px 70px;
+    font-size: 20px;
+}
+#input-form{
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-50%, -63%);
+    animation: drop 2s 2s 1 forwards;
+}
+@keyframes drop{
+    0%{
+       opacity: 0;;
+    }
+    100%{
+     opacity: 1;
+     transform: translate(-50%, -50%);
+    }
+}
+#input-form h1{
+    float: left;
+    font-size: 40px;
+    margin-bottom: 50px;
+    padding: 13px 0px;
+}
+#input-form #input{
+    width: 100%;
+    overflow: hidden;
+    font-size: 20px;
+    padding: 8px 0px;
+    margin: 8px 0px;
+    border-bottom: 1px solid #e5e5e5;
+}
+#input-form select{
+    width: 80%;
+    background: none;
+    border: none;
+    color: #808080;
+    outline: none;
+    font-size: 18px;
+    float: left;
+    margin: 0px 10px;
+}
+#input-form select option{
+    background-color: black;
+}
+#input #nochange{
+    width: 26px;
+    float: left;
+    margin: 0px -4px 0px 0px;
+    text-align: center;
+}
+#apicol{
+    float: left;
+    display: flex;
+    flex-direction: column;
+}
+#api{
+    flex-direction: row;
+}
+#unstable{
+    display: flex;
+    flex-direction: column;
+    float: left;
+}
+#unstable #userhead{
+    width: 12px;
+    margin: 0px 0px 0px 4px;
+}
+#input input{
+    border: none;
+    outline: none;
+    background: none;
+    color: white;
+    font-size: 18px;
+    width: 80%;
+    float: left;
+    margin: 0px 10px;
+}
+#btn{
+    height: 40px;
+    min-width: 35%;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-weight: 800;
+    background-color: #3d3d3d;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    margin: 40px 34%;
+    transition: all .3s;
+}
+#btn:hover{
+    background: none;
+    color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 10px 0px;
+}
+/* Footer */
+footer{
+    margin-top: 90vh;
+    display: flex;
+    flex-wrap: wrap;
+    opacity: 0;
+    justify-content: space-around;
+    animation: fade-in 2s 3s 1 forwards;
+}
+span{
+    text-align: right;
+    color: #797979;
+    margin-left: auto;
+    margin-right: -120px;
+}
+#mis{
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+}
+#mis a{
+    color: #797979;
+    text-decoration: none;
+    margin: 0px 10px;
+}
+@media screen and (max-width: 424px){
+    h2{
+        text-align: center;
+        padding: 20px;
+    }
+    #input-form{
+        width: 300px;
+    }
+    #input-form h1{
+        float: none;
+        text-align: center;
+    }
+
+    footer{
+        margin-top: 85vh;
+    }
+    span{
+        text-align: center;
+        color: #797979;
+        margin-left: 10px;
+    }
+    #mis{
+        display: flex;
+        justify-content: space-between;
+    }
+    #mis a{
+        color: #797979;
+        text-decoration: none;
+        margin: 0px 10px;
+    }
+}
